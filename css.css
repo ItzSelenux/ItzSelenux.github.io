@@ -1,16 +1,17 @@
 body{background: #2a2a2a; color: #ffffff}
 *{padding: 0; margin: 0; text-decoration: none; list-style: none; box-sizing: border-box;}
+
   .wrapper
-  {display: flex; position: relative;}
-  
+  {display: flex; position: fixed;}
+
   .wrapper .sidebar
-  {width: 50px; height: 100%; padding-top: 0px; background: #2d2d2d; position: fixed;}
+  {width: 50px; height: 200%; padding-top: 6px; background: #2d2d2d; position: fixed;}
   
   .wrapper .sidebar ul li 
   {padding: 16px; border-bottom: 1px solid #8fa876; border-bottom: 0px;border-top: 0px;}
   
   .wrapper .sidebar ul li a
-  {color: #fff; display: block;}
+  {color: #fff; display: flex;}
   
   .wrapper .sidebar ul li:hover
   {background-color: #8fa876; transition: 0.6s; border-radius: 3px;}
@@ -22,46 +23,56 @@ body{background: #2a2a2a; color: #ffffff}
   {font-family: sans-serif;}
 
   nav
-  {background: #2f2f2f; height: 60px; width: 100%;}
+  {background: #2f2f2f; height: 60px; width: 100%; position:fixed;}
 
   label.logo
-  {color: #8fa875; font-size: 25px; line-height: 80px; padding: 110 100px; font-weight: bold;}
+  {color: #8fa875; line-height: 80px; padding: 110 100px;}
 
   nav ul
   {float: right;}
 
   nav ul li
-  {display: inline-block;line-height: 80px; margin: 0 5px;}
+  {display: flex;line-height: 80px; margin: 0 5px;}
 
   nav ul li a
   {color: #fff; font-size: 17px; padding: 7px 13px; border-radius: 3px;}
 
   .checkbtn
-  {font-size: 26px; color: #fff; float: left; line-height: 60px;
-   margin-left: 13px; cursor: pointer; display: none;}
+  { color: #fff; float: left; line-height: 60px;
+   margin-left: 13px; cursor: pointer; display: flex; position: fixed; padding-top: 9px;}
 
   #check
   {display: none;}
-  
-    .checkbtn
-    {display: block;}
+
+    .checkbtn i
+    {padding-top: 13px;font-size: 26px;}
 
     nav ul
     {position: fixed; width: 200px; height: 100vh; background: #2d2d2d;
      top: 60px; left: -100%; text-align: left; padding-left: 13px; transition: 0.6s;}
 
     nav ul li
-    {display: block; padding-top: 30px; line-height: 9px; border-radius: 6px;}
+    {display: flex; line-height: 34px; border-radius: 6px;}
 
     nav ul li:hover
     {background: #8fa876; transition: 0.6s;}
 
     nav ul li a
-    {font-size: 16px; vertical-align: 150%;}
+    {font-size: 16px; vertical-align: middle;}
 
     #check:checked ~ ul
     {left: 36px;}
 
     .ghbtn
-    {font-size: 16px; color: #fff; float: right; line-height: 60px;
-     margin-right: 13px; cursor: pointer; display: block; margin-top: 7px;}
+    {font-size: 16px; float: right; line-height: 60px;
+     margin-right: 13px; cursor: pointer; display: flex; margin-top: 7px;}
+
+    .ghbtn a
+    {font-size: 26px; color: #fff; float: right; line-height: 60px;
+     margin-right: 13px; cursor: pointer; display: flex; margin-top: 7px;}
+
+    .ghbtn a:hover
+    { color: #8fa876; transition: 0.6s;}
+
+    td
+    {padding-right: 16px;padding-left: 16px;}
