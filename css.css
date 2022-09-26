@@ -20,13 +20,13 @@ body{background: #2a2a2a; color: #ffffff;}
   {color: #fff}
 
   .github
-  {position: fixed; float: left; right: 216px; display: block;}
+  {position: fixed; float: left; right: 216px; display: block; top: 3px}
 
   body
   {font-family: sans-serif;}
 
   nav
-  {background: #2f2f2f; height: 60px; width: 100%; position:fixed;}
+  {background: #2f2f2f; height: 66px; width: 100%; position:fixed;}
 
   label.logo
   {color: #8fa875; line-height: 80px; padding: 110 100px;}
