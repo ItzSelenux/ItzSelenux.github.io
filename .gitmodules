@@ -1,3 +1,6 @@
 [submodule "web/DropFromClipboard"]
 	path = web/DropFromClipboard
 	url = https://github.com/ItzSelenux/DropFromClipboard
+[submodule "web/wmguru"]
+	path = web/wmguru
+	url = https://github.com/ItzSelenux/wmguru
