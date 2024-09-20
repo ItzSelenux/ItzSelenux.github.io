@@ -1,0 +1,48 @@
+<!--HEADERS-->
+<!DOCTYPE html>
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="css.css">
+<script src="bar.js"></script>
+
+<!--TITLE-->
+<link rel="shortcut icon" type="image/x-icon" href="../../res/favicons/gxcapindicator.ico">
+<title>GXCapIndicator - Web Demo</title>
+</head>
+
+<!--NavBar-->
+<div inc="bar.html"></div>
+	<script>includeHTML();</script>
+</div>
+
+<script>
+	function updateTime()
+	{
+		var today = new Date();
+		var options = {hour: 'numeric', minute: 'numeric'};
+		var time = today.toLocaleTimeString([], options);
+		document.getElementById("time").innerHTML = time;
+	}
+	setInterval(updateTime, 1000); // update every second
+</script>
+
+<!--WebPage Content-->
+<center>
+
+<br>
+	<img width="256px" height="1%" src="../../res/projects/gxcapindicator.svg">
+
+	<h1>GXCapIndicator Web Demo</h1>
+	<h3>Due to Web limitations, you need to focus the next text entry to see changes in the Virtual indicator</h3>
+<input type="text" id="inputText" >
+<h3 id="capsStatus"></h3>
+<h3 id="numStatus"></h3>
+<h4>Note: due to website limitations, verification may be inaccurate</h4>
+	 <p id="time"></p>
+	
+	</center>
+	<br><br><br>    <br><br><br><br><br>
+	<script src="gxcapindicator.js"></script>
+</body>
+
+</html>

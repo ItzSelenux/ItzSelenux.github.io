@@ -1,4 +1,4 @@
-body{background: #2a2a2a; color: #ffffff;}
+body{background: #2a2a2a; color: #eeeeee;}
 *{padding: 0; margin: 0; text-decoration: none; list-style: none; box-sizing: border-box;}
 
   .wrapper
@@ -21,12 +21,13 @@ body{background: #2a2a2a; color: #ffffff;}
 
   .github
   {position: fixed; float: left; right: 216px; display: block; top: 3px}
-
+  
   .code table tr
   {display: flex; border-radius: 9px; background-color: #1a1a1a; font-family: monospace;}
 
   .wp
-  { display: flex; padding-left: 79px; padding-top: 96px;}
+  { display:flex;flex-direction: column;  padding-left: 0px; padding-top: 96px; width: 99%; text-align:center;
+  align-items: center; justify-content: center; }
 
   body
   {font-family: sans-serif;}
