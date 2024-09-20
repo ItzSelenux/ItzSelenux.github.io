@@ -62,6 +62,12 @@ function initializeNumLockListener() {
 }
 
 document.addEventListener('DOMContentLoaded', function() {
-  initializeCapsLockListener();
-  initializeNumLockListener();
+  function checkAndInitialize() {
+    if (document.querySelector('.ghbtn')) {
+      initializeCapsLockListener();
+      initializeNumLockListener();
+      clearInterval(intervalID);
+    }
+  }
+  var intervalID = setInterval(checkAndInitialize, 100);
 });
