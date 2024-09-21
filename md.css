@@ -137,7 +137,7 @@
   }
   
   .markdown-body a {
-    color: #43a64f;
+    color: #91a666;
     text-decoration: none;
   }
   
@@ -722,6 +722,7 @@
   
   .markdown-body li {
     word-wrap: break-all;
+    text-align:left;
   }
   
   .markdown-body li>p {

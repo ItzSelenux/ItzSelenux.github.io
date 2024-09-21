@@ -1,4 +1,9 @@
-body{background: #2a2a2a; color: #eeeeee;}
+@font-face
+{font-family: 'TablerIcons';src: url('res/fonts/tabler-icons.ttf') format('truetype');}
+
+
+
+body{background: #2a2a2a; color: #eeeeee; font-family: sans-serif, 'TablerIcons';}
 *{padding: 0; margin: 0; text-decoration: none; list-style: none; box-sizing: border-box;}
 
   .wrapper
@@ -25,12 +30,18 @@ body{background: #2a2a2a; color: #eeeeee;}
   .code table tr
   {display: flex; border-radius: 9px; background-color: #1a1a1a; font-family: monospace;}
 
+  .webdemobtn table tr
+  {display: flex; border-radius: 9px; background-color: #91a666;}
+
+  .webdemobtn table tr:hover
+  {display: flex; border-radius: 9px; background-color: #91a666;  transform: scale(1.1); transition: transform 0.3s ease-in-out; }
+
+  .webdemobtn a
+  {color:#2a2a2a;}
+
   .wp
   { display:flex;flex-direction: column;  padding-left: 0px; padding-top: 96px; width: 99%; text-align:center;
   align-items: center; justify-content: center; }
-
-  body
-  {font-family: sans-serif;}
 
   nav
   {background: #2f2f2f; height: 66px; width: 100%; position:fixed;}
@@ -45,7 +56,7 @@ body{background: #2a2a2a; color: #eeeeee;}
   {display: flex;line-height: 80px; margin: 0 5px;}
 
   nav ul li a
-  {color: #fff; font-size: 17px; padding: 7px 13px; border-radius: 3px;}
+  {color: #fff; font-size: 17px; padding: 13.5px 13px; border-radius: 3px;}
 
   .checkbtn
   { color: #fff; float: left; line-height: 60px;
@@ -75,11 +86,11 @@ body{background: #2a2a2a; color: #eeeeee;}
 
     .ghbtn
     {font-size: 16px; float: right; line-height: 60px;
-     margin-right: 13px; cursor: pointer; display: flex; margin-top: 7px;}
+     margin-right: 13px; cursor: pointer; display: flex;}
 
     .ghbtn a
     {font-size: 26px; color: #fff; float: right; line-height: 60px;
-     margin-right: 13px; cursor: pointer; display: flex; margin-top: 7px;}
+     margin-right: 13px; cursor: pointer; display: flex;}
 
     .ghbtn a:hover
     { color: #91a666; transition: 0.6s;}
