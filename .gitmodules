@@ -1,3 +1,4 @@
 [submodule "web/DropFromClipboard"]
 	path = web/DropFromClipboard
 	url = https://github.com/ItzSelenux/DropFromClipboard
+	branch = main
